@@ -9,11 +9,11 @@ This is a nix flake for [GNOME Rounded Blur](https://github.com/kancko/gnome-rou
 1. Add it to flake inputs: 
   ```nix
   inputs = {
-    gnome-rounded-blur.url = "github:Klazkin/nix-gnome-rounded-blur/release-26.05";
+    gnome-rounded-blur.url = "github:Klazkin/nix-gnome-rounded-blur";
     # ...
   }
   ```
-2. Import the nixos module 
+2. Import the nixos module somewhere, for example in `configuration.nix`
   ```nix
   { inputs, ... }: {
     imports = [ inputs.gnome-rounded-blur.nixosModules.default ];
