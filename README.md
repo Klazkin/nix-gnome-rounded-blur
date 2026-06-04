@@ -19,3 +19,7 @@ This is a nix flake for [GNOME Rounded Blur](https://github.com/kancko/gnome-rou
     imports = [ inputs.gnome-rounded-blur.nixosModules.default ];
   }
   ```
+
+3. That's it. If you are using this with `blur-my-shell` extensions, you may need to log out of Gnome for the new blur effect to be detected.
+  
+  ![showcase.png](showcase.png)
